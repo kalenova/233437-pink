@@ -2,11 +2,187 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>HTML Academy: Pink</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+  <header class="page-header">
+
+		<div class="page-header__logo">	
+			<a href="index.html">
+				<img src="http://placehold.it/150x100" width="150" height="100" alt="logo">		
+			</a>
+		</div>
+		
+		<nav class="main-nav main-nav--closed main-nav--nojs">
+			<button class="main-nav__toggle" type="button"></button>
+
+			<div class="main-nav__wrapper">			
+					<ul class="main-nav__items">
+						<li class="main-nav__item"><a href="#">Главная</a></li>
+						<li class="main-nav__item"><a href="#">Фотографии</a></li>
+						<li class="main-nav__item"><a href="#">Конкурс</a></li>
+						<li class="main-nav__item"><a href="#">Html Academy</a></li>
+					</ul>
+			</div>
+		</nav>
+		
+	</header>
+
+ <main class="page-main">
+ 
+  <section class="download">
+		<div class="download__banner">
+			<img src="http://placehold.it/150x100" width="150" height="100" alt="banner">		
+		</div>
+  
+		<a class="download__button" href="#">Скачать приложение</a>
+
+		<ul class="download__items">   
+			<li class="download__item"><a href="#">Apple</a></li>
+      <li class="download__item"><a href="#">Android</a>
+      <li class="download__item"><a href="#">Win</a>
+		</ul>    
+          
+    <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+  </section>
+
+	<section class="features">
+		<div class="features__titles">
+			<h2 class="features__title">Устали от серости мегаполиса?</h2>
+			<h2 class="features__title">Нам есть, что вам предложить!</h2>
+		</div>
+
+		<ul class="features__items">  
+			<li class="features__item">
+				<h3 class="features__item-title">Поднимает настроение</h3>
+				<p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+			</li>
+
+			<li class="features__item">
+				<h3 class="features__item-title">Меняет мир вокруг</h3>
+				<p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+			</li>
+
+			<li class="features__item">
+				<h3 class="features__item-title">Заводит новых друзей</h3>
+				<p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+			</li>
+		</ul> 
+
+		<div class="features__image">
+    	<img src="http://placehold.it/150x100" width="150" height="100" alt="phone">		
+    </div>
+	</section>
+
+	<section class="reviews">
+		<div class="reviews__wrapper slider">
+
+			<input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+			<input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+			<input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+
+			<div class="reviews__items">
+				<blockquote class="reviews__item slider__item">
+					<cite class="reviews__auhor-name">Николай Петров</cite>
+					<p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+				</blockquote>
+			</div>
+
+			<div class="reviews__toggles slider__toggles">
+				<label class="slider__toggle" for="reviews-input-1">1</label>
+				<label class="slider__toggle" for="reviews-input-2">2</label>
+				<label class="slider__toggle" for="reviews-input-3">3</label>
+			</div>
+		</div>
+	</section>
+
+	<section class="prices">
+		<div class="prices__wrapper slider">
+
+			<input class="slider__input" type="radio" name="prices" id="prices-input-1">
+			<input class="slider__input" type="radio" name="prices" id="prices-input-2" checked>
+			<input class="slider__input" type="radio" name="prices" id="prices-input-3">
+
+        <table class="prices__table">
+          <thead class="prices-header">           
+            <tr>  
+              <td class="prices-plans">
+                <p class="prices-plans__title">База</p>
+                <p class="prices-plans__cost">1,99 USD</p>
+              </td>
+           
+              <td class="prices-plans">
+                <p class="prices-plans__title">Стандарт</p>
+                <p class="prices-plans__cost">2,99 USD</p>
+              </td>
+              
+              <td class="prices-plans">
+                <p class="prices-plans__title">Анлим</p>
+                <p class="prices-plans__cost">9,99 USD</p>
+              </td>                
+            </tr>
+          </thead>
+
+          <tr>
+            <td class="prices-plans__item prices-plans__item_on">Розовый фильтр</td>
+            <td class="prices-plans__item prices-plans__item_on">Розовый фильтр</td>
+            <td class="prices-plans__item prices-plans__item_on">Розовый фильтр</td>
+          </tr>
+
+          <tr>
+            <td class="prices-plans__item prices-plans__item_off">Смайлики</td>
+            <td class="prices-plans__item prices-plans__item_on">Смайлики</td>
+            <td class="prices-plans__item prices-plans__item_on">Смайлики</td>
+          </tr>
+
+          <tr>
+            <td class="prices-plans__item prices-plans__item_off">Комментарии</td>
+            <td class="prices-plans__item prices-plans__item_off">Комментарии</td>
+            <td class="prices-plans__item prices-plans__item_on">Комментарии</td>
+          </tr>
+        </table>
+
+			<div class="prices__toggles slider__toggles">
+				<label class="slider__toggle" for="prices-input-1">1</label>
+				<label class="slider__toggle" for="prices-input-2">2</label>
+				<label class="slider__toggle" for="prices-input-3">3</label>
+			</div>
+		</div>
+	</section>
+
+	</main>
+
+ 	<footer class="page-footer">
+    <div class="page-footer__wrapper">
+
+			<h2 class="page-footer__title">Остались вопросы?</h2>
+			<h2 class="page-footer__title">Свяжитесь с нами!</h2>
+
+			<ul class="page-footer__contacts">  
+				<li class="contacts__item">
+					<h3 class="contacts-header">Звоните:</h3>
+					<p class="contacts-info" href="#">+7(812) 555-66-66</p>
+				</li>
+				
+				<li class="contacts__item">
+					<h3 class="contacts-header">Пишите:</h3>
+					<a class="contacts-info" href="#">mail@htmlacademy.ru</a>
+				</li>
+
+				<li class="contacts__item">
+					<h3 class="contacts-header">Приезжайте в гости:</h3>
+					<p class="contacts-info" href="#">ул. Большая Конюшенная, 19/8</p>
+				</li>
+
+				<div class="page-footer__map">
+				</div>
+			</ul>
+	
+		</div>
+	</footer>
+
+  <script></script>
 
   </body>
-</html>
+</html>	
